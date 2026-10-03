@@ -31,7 +31,7 @@ public class buildapi {
 	    public List<buildingbean> getBuildingbeans(@RequestParam(value ="name",required = false)String name,
 	    		@RequestParam(value="districtid",required = false)Integer districtid) {
 	    	List<buildingbean> result = buildingservice.findAll(name,districtid);
-	    	return null;
+	    	return result;
 //		 	try {
 //		 		validate(building);
 //		 	}catch (FieldRequeiredException e) {
